@@ -67,7 +67,7 @@ app.route('/api/notes')
         let jsonFilePath = path.join(__dirname, '/db/db.json');
         // req to delete by id
         for (let i = 0; i < database.length; i++) {
-            if (database[i].id === req.params.id) {
+            if (database[i].id == req.params.id) {
                 database.splice(i, 1);
                 break;
             };
